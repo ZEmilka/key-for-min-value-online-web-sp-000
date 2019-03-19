@@ -1,4 +1,3 @@
-
 def key_for_min_value(hash)
     min_value = nil && min_key = nil
     hash.each do |k , v|
