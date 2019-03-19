@@ -1,4 +1,4 @@
 
 def key_for_min_value(hash)
-  hash.select { |_, b| b == hash.values.min }
+  Hash[*hash.sort_by(&:last)[0]]
 end
