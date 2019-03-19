@@ -1,4 +1,4 @@
 
-def key_for_min_value(name_hash)
-  name_hash.select { |_, b| b == name_hash.values.min }
+def key_for_min_value(hash)
+  hash.select { |_, b| b == hash.values.min }
 end
