@@ -4,6 +4,6 @@ def key_for_min_value(hash)
        return nil
   else
        hash = hash.each {|k, v| v}
-       return key
+       return lowest_key
    end
 end
