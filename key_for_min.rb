@@ -1,5 +1,4 @@
 
 def key_for_min_value(name_hash)
-  lower=name_hash.find{|l| l[:value]<name_hash[:value]}
-  return lower
+  name_hash.group_by{|k,v| v}.min_by{|k,v| k}.last_to_h
 end
