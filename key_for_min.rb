@@ -1,14 +1,11 @@
 def key_for_min_value(hash)
-  if hash = {}
-    return nil
-  else
-      hash.each do |key, value|
-        array << value
-        if value < min_value
-          min_value = value
-          min_key = key
-        end
-      end
-      return min_key
-  end
-end
+    lowest_key = nil 
+    lowest_value = nil 
+    name_hash.each do |k, v|
+      if lowest_value == nil || v < lowest_value
+        lowest_value = v 
+        lowest_key = k 
+      end 
+    end 
+    lowest_key
+  end 
